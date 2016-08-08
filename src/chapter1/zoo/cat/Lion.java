@@ -1,4 +1,4 @@
-package chapter1.cat;
+package chapter1.zoo.cat;
 
 abstract class Cat {
 	abstract void clean();

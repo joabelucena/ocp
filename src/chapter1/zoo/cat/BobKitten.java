@@ -1,4 +1,4 @@
-package chapter1.cat;
+package chapter1.zoo.cat;
 
 public class BobKitten extends BobCat {
 	public void findDen() {}				//Overriding

@@ -1,4 +1,4 @@
-package chapter1.cat;
+package chapter1.zoo.cat;
 
 public class CatAdmirer {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package chapter1.mouse;
+package chapter1.zoo.mouse;
 
 import chapter1.cat.BigCat;
 
