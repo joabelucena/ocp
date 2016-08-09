@@ -11,6 +11,38 @@ class Hippo extends HeavyAnimal {}
 class MotherHippo extends Hippo implements Mother {}
 
 public class Elephant extends HeavyAnimal{
+	private int id;
+	private int age;
+	private String name;
+	private double weight;
+	
+	public Elephant(String name, double weight){
+		this.name = name;
+		this.weight = weight;
+	}
+	
+	
+	
+	public Elephant(int id, int age, String name) {
+		super();
+		this.id = id;
+		this.age = age;
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return name;
+	}
+	
+//	@Override
+//	public boolean equals(Object obj){
+//		if( !(obj instanceof Elephant)) return false;
+//		Elephant otherElephant = (Elephant) obj;
+//		return this.id == otherElephant.id;
+//	}
+//	
+//	
 
 	public static void main(String[] args) {
 		
