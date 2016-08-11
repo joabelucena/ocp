@@ -9,13 +9,12 @@ import java.util.List;
 
 import chapter3.generics.Crate;
 import chapter3.generics.SizeLimitedCrate;
+import chapter3.generics.beans.Elephant;
+import chapter3.generics.beans.Robot;
+import chapter3.generics.beans.Zebra;
 
 public class TestClass {
 	
-	private static class Elephant { }
-	private static class Robot { }
-	private static class Zebra { }
-
 	public static void main(String[] args) {
 		
 		{
@@ -73,7 +72,61 @@ public class TestClass {
 			
 		}
 		
+		separe();
 		
+		{
+			/*
+			 * Searching and sorting arrays
+			 */
+			int[] numbers = {6,10,1,8};
+			Arrays.sort(numbers);
+			System.out.println(Arrays.toString(numbers));
+			System.out.println(Arrays.binarySearch(numbers, 6));
+			System.out.println(Arrays.binarySearch(numbers, 3));
+			System.out.println(Arrays.binarySearch(numbers, 9));
+			
+			/*
+			 * Searching and sorting Collections
+			 */
+			List<Integer> list = Arrays.asList(9,7,5,3);
+			Collections.sort(list);
+			System.out.println(Collections.binarySearch(list, 3));
+			System.out.println(Collections.binarySearch(list, 2));
+			
+		}
+		
+		separe();
+		
+		{
+			/*
+			 * Generics
+			 */
+			Elephant elephant = new Elephant();
+			Crate<Elephant> crateForElephant = new Crate<>();
+			crateForElephant.packCrate(elephant);
+			Elephant inNewHome = crateForElephant.emptyCrate();
+			
+			Crate<Zebra> crateForZebra = new Crate<>();
+			
+			Robot joeRobot = new Robot();
+			Crate<Robot> crateForRobot = new Crate<>();
+			crateForRobot.packCrate(joeRobot);
+			
+			Robot atDestination = crateForRobot.emptyCrate();
+			
+		}
+		
+		separe();
+		
+		{
+			/*
+			 * More than one-parameter generics
+			 */
+			Elephant elephant = new Elephant();
+			Integer numPounds = 15_000;
+			
+			SizeLimitedCrate<Elephant, Integer> c1 = new SizeLimitedCrate<>(elephant, numPounds);
+		}
 
 	}
 
