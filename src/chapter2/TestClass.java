@@ -4,8 +4,7 @@ import static lib.TextElements.separe;
 
 import java.util.Arrays;
 
-import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
-
+import chapter2.design.pattern.builder.AnimalBuilder;
 import chapter2.design.pattern.immutable.Animal;
 import chapter2.design.pattern.singleton.HayStorage;
 import chapter2.design.pattern.singleton.StaffRegister;
@@ -57,6 +56,24 @@ public class TestClass {
 			
 			System.out.println(lion + "" + lion.hashCode());
 			System.out.println(updatedLion + "" + updatedLion.hashCode());
+		}
+		
+		separe();
+		
+		{
+			AnimalBuilder lionBuilder = new AnimalBuilder();
+			
+			lionBuilder.setSpecies("Lion")
+						.setAge(5)
+						.setFavoriteFoods(Arrays.asList("meat", "more meat"));
+			
+			Animal lion = new Animal("Lion", 5, Arrays.asList("meat", "more meat"));
+			Animal lion2 = lionBuilder.build();
+			
+			System.out.println(lion);
+			System.out.println(lion2);
+			
+			
 		}
 
 	}
