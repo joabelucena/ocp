@@ -12,6 +12,7 @@ import chapter3.generics.SizeLimitedCrate;
 import chapter3.generics.beans.Elephant;
 import chapter3.generics.beans.Robot;
 import chapter3.generics.beans.Zebra;
+import chapter3.generics.methods.GenericMethods;
 
 public class TestClass {
 	
@@ -126,6 +127,19 @@ public class TestClass {
 			Integer numPounds = 15_000;
 			
 			SizeLimitedCrate<Elephant, Integer> c1 = new SizeLimitedCrate<>(elephant, numPounds);
+		}
+		
+		separe();
+		
+		{
+			/*
+			 * Generic method calling
+			 */
+			//Specifying
+			GenericMethods.<String>ship("Cake");
+			
+			//Compiler autoboxing
+			GenericMethods.ship("cake");
 		}
 
 	}
