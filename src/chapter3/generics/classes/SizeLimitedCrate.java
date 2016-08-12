@@ -1,4 +1,4 @@
-package chapter3.generics;
+package chapter3.generics.classes;
 
 /*
  * Generics references use in this case are: T for Type and U for Unit

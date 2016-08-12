@@ -1,4 +1,4 @@
-package chapter3.generics;
+package chapter3.generics.interfaces;
 
 import chapter3.generics.beans.Robot;
 

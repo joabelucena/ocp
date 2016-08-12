@@ -7,11 +7,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import chapter3.generics.Crate;
-import chapter3.generics.SizeLimitedCrate;
 import chapter3.generics.beans.Elephant;
 import chapter3.generics.beans.Robot;
 import chapter3.generics.beans.Zebra;
+import chapter3.generics.classes.Crate;
+import chapter3.generics.classes.SizeLimitedCrate;
 import chapter3.generics.methods.GenericMethods;
 
 public class TestClass {

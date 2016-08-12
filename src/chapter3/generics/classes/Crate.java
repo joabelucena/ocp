@@ -1,4 +1,4 @@
-package chapter3.generics;
+package chapter3.generics.classes;
 
 /**
  * This is a generic class. 

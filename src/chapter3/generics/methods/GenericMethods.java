@@ -1,6 +1,6 @@
 package chapter3.generics.methods;
 
-import chapter3.generics.Crate;
+import chapter3.generics.classes.Crate;
 
 public class GenericMethods {
 	
