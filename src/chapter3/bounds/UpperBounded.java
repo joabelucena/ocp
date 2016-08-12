@@ -33,8 +33,6 @@ class Goose implements Flyer { public void fly() { }  }
  */
 public class UpperBounded {
 	
-	
-
 	public static void main(String[] args) {
 		
 		{
@@ -55,6 +53,24 @@ public class UpperBounded {
 			System.out.println("The list's: " + list + " factorial is: " + factorial(list));	
 		}
 		
+		{
+			List<Flyer> flyers = new ArrayList<>();
+			List<HangGlider> gliders = new ArrayList<>();
+			List<Goose> gooses = new ArrayList<>();
+			
+			anyFlyer(flyers);
+			
+			/*
+			 * DOES NOT COMPILE
+			 */
+//			anyFlyer(gliders);
+//			anyFlyer(gooses);
+			
+			groupOfFLyers(flyers);
+			groupOfFLyers(gliders);
+			groupOfFLyers(gooses);
+		}
+		
 
 	}
 	
@@ -69,6 +85,6 @@ public class UpperBounded {
 		return count;
 	}
 	
-	private void anyFlyer(List<Flyer> flyer) { }
-	private void groupOfFLyers(List<? extends Flyer> flyer) { }
+	private static void anyFlyer(List<Flyer> flyer) { }
+	private static void groupOfFLyers(List<? extends Flyer> flyer) { }
 }
