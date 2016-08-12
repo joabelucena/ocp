@@ -1,10 +1,11 @@
 package chapter3.collecions;
 
-import static lib.TextElements.*;
+import static lib.TextElements.miniSepare;
+import static lib.TextElements.separe;
 
-import java.util.*;
-
-import javax.swing.text.html.MinimalHTMLWriter;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 class Animal {
 	String species;
