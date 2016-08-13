@@ -7,10 +7,34 @@ import java.util.List;
 public class Duck implements Comparable<Duck> {
 	
 	private String name;
-	public Duck(String name) {
-		this.name = name;
+	private double weight;
+	
+	public Duck(String name){
+		this(name, 5);
 	}
 	
+	public Duck(String name, double weight) {
+		this.name = name;
+		this.weight = weight;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
 	public String toString() {
 		return name;
 	}
