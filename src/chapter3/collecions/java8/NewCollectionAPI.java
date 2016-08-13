@@ -3,9 +3,7 @@ package chapter3.collecions.java8;
 import static lib.TestData.*;
 import static lib.TextElements.*;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.function.UnaryOperator;
+import java.util.*;
 
 public class NewCollectionAPI {
 
