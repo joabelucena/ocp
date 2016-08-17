@@ -12,7 +12,6 @@ public class StreamPipeline {
 	public static void main(String[] args) {
 		
 		Function<Integer, Stream<String>> names = TestData::getNames;
-		Function<Integer, Stream<String>> animals = TestData::getAnimals;
 		
 		{
 			/*
