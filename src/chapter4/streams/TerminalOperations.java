@@ -3,7 +3,9 @@ package chapter4.streams;
 import static lib.TextElements.miniSepare;
 import static lib.TextElements.separe;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 import java.util.TreeSet;
@@ -171,6 +173,23 @@ public class TerminalOperations {
 				BinaryOperator<Integer> op = (a, b) -> a * b;
 				Stream<Integer> stream = Stream.of(3, 5, 6);
 				System.out.println(stream.reduce(1, op, op));
+			}
+			
+			miniSepare();
+			
+			{
+//				<U> U reduce(U identity, BiFunction<U, ? super T, U> accumulator, BinaryOperator<U> combiner)
+				Stream<String> stream = animals.get().stream();
+				
+				HashMap<Integer, String> map = stream
+							.collect(
+									() -> new HashMap<Integer, String>(),
+									(a, b) -> a.put((int) (Math.random() * 100), b),
+									(a, b) -> a.putAll(b));
+				
+				System.out.println(map);
+				
+				
 			}
 
 		}
