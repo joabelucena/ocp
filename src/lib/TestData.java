@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class TestData {
 	private static final List<String> animals = Arrays.asList("lion", "sheep", "caw", "zebra");
 	
-	private static final List<Integer> numbers = Arrays.asList(23,42,54,65,11,73);
+	private static final List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 	
 	private static final List<String> names = Arrays.asList("John", "Annie", "Robert", "Zack");
 	

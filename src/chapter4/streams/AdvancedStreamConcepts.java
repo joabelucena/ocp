@@ -73,34 +73,6 @@ public class AdvancedStreamConcepts {
 			
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		separe();
 		
 		{
