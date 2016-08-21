@@ -50,9 +50,9 @@ public class DayligthSavingTime {
 
 			System.out.println(zoned);
 			
-//			System.out.println(zoned.plusHours(1));
-//			
-//			System.out.println(zoned.plusHours(2));
+			System.out.println(zoned.plusHours(1));
+			
+			System.out.println(zoned.plusHours(2));
 
 			miniSepare();
 			
