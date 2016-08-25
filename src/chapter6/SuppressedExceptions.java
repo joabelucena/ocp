@@ -3,6 +3,7 @@ package chapter6;
 import static lib.TextElements.separe;
 
 class JammedTurkeyCage implements AutoCloseable {
+	
 	public void close() throws IllegalStateException {
 
 		// 3 - This method throw a new Exception. Throughout there's already a
