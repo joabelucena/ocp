@@ -4,15 +4,14 @@ public class TestClass {
 
 	public static void main(String[] args) {
 		
-		for (int i = 0; i < 5; i++) {
-			System.out.println("begin");
-			
-			(new ReadInventory()).start();
-			(new Thread(new PrintData())).start();
-			(new ReadInventory()).start();
-			
-			System.out.println("end");	
-		}		
+		System.out.println("begin");
+		
+		(new ReadInventory("1")).start();
+		(new Thread(new PrintData("2"))).start();
+		(new ReadInventory("5")).start();
+		
+		System.out.println("end");	
+				
 		
 	}
 
