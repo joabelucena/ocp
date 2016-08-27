@@ -53,7 +53,7 @@ public class SheepManager {
 			service = Executors.newFixedThreadPool(20);
 			SheepManager manager = new SheepManager();
 			
-			for (int i = 0; i < 500; i++) {
+			for (int i = 0; i < 10; i++) {
 				service.submit(()-> manager.incrementAtomically());	
 			}
 			
@@ -76,8 +76,8 @@ public class SheepManager {
 			service = Executors.newFixedThreadPool(20);
 			SheepManager manager = new SheepManager();
 			
-			for (int i = 0; i < 500; i++) {
-				service.submit(()-> manager.incrementAtomically());	
+			for (int i = 0; i < 10; i++) {
+				service.submit(()-> manager.incrementSynchronously());	
 			}
 			
 		} finally {

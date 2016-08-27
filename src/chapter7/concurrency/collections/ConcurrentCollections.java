@@ -212,9 +212,5 @@ public class ConcurrentCollections {
 				syncMap.remove(key);
 			}
 		}
-		
-		
-		
 	}
-
 }
