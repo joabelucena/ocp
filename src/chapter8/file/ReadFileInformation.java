@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8.file;
 
 import static lib.TextElements.separe;
 
@@ -16,11 +16,11 @@ public class ReadFileInformation {
 
 	public static void main(String[] args) throws IOException {
 		
-		File file = new File(FilePath.PROJECT_PATH + "io/zoo.txt");
-//		File file = new File(FilePath.PROJECT_PATH );
+		File file = new File(FilePath.SANDBOX_PATH + "zoo.txt");
+//		File file = new File(FilePath.SANDBOX_PATH );
 		
 		System.out.println("File exists: " + (file.exists() ? "Yes" : "No"));
-		BufferedInputStream in = new BufferedInputStream(new FileInputStream(""));
+		
 		separe();
 		
 		if(file.exists()){
