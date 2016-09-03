@@ -2,9 +2,17 @@ package chapter8;
 
 import static lib.TextElements.separe;
 
-public class TestClass {
+import java.io.BufferedReader;
+import java.io.Console;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
-	public static void main(String[] args) {
+import lib.FilePath;
+
+public class TestClass  {
+
+	public static void main(String[] args) throws IOException {
 		{
 			System.out.println(System.getProperty("file.separator"));
 			
@@ -14,6 +22,10 @@ public class TestClass {
 		separe();
 
 		{
+			File file = new File(FilePath.SANDBOX_PATH);
+			
+			Console console = System.console();
+			new BufferedReader(new BufferedReader(new FileReader("")));
 			
 		}
 	}
