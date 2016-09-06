@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="chapter1/inner/|chapter1/year/|chapter1/zoo/|chapter2/design/|chapter2/functional/|chapter2/interfaces/|chapter2/polymorphism/|chapter3/bounds/|chapter3/collecions/|chapter3/generics/|chapter4/functional/|chapter4/optional/|chapter4/streams/|chapter5/format/|chapter5/i18n/|chapter5/l10n/|chapter5/time/|chapter7/concurrency/|chapter7/intro/|chapter7/streams/|chapter8/file/|chapter8/interaction/|chapter8/serialize/" kind="src" path="src"/>
+	<classpathentry excluding="chapter1/inner/|chapter1/year/|chapter1/zoo/|chapter2/design/|chapter2/functional/|chapter2/interfaces/|chapter2/polymorphism/|chapter3/bounds/|chapter3/collecions/|chapter3/generics/|chapter4/functional/|chapter4/optional/|chapter4/streams/|chapter5/format/|chapter5/i18n/|chapter5/l10n/|chapter5/time/|chapter7/concurrency/|chapter7/intro/|chapter7/streams/|chapter8/file/|chapter8/interaction/|chapter8/serialize/|chapter9/files/|chapter9/paths/|chapter9/streams/|chapter9/views/" kind="src" path="src"/>
 	<classpathentry excluding="**" kind="src" path="nio2"/>
 	<classpathentry excluding="**" kind="src" path="io"/>
 	<classpathentry kind="src" path="i18n"/>
