@@ -1,6 +1,7 @@
 package chapterA;
 
 import java.sql.*;
+import java.util.Properties;
 
 import lib.TextElements;
 
@@ -78,6 +79,17 @@ public class TestClass extends TextElements {
 					int result = stm.getUpdateCount();
 					System.out.println("ran an update");
 				}
+			}
+			
+			separe();
+			
+			{
+				Properties p = new Properties();
+				p.setProperty("user", "SYSDBA");
+				p.setProperty("password", "masterkey");
+				Connection c = DriverManager.getConnection(url, p);
+				
+				c.close();
 			}
 
 		}

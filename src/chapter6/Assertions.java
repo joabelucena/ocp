@@ -17,15 +17,15 @@ public class Assertions {
 		 *  or
 		 * java -enableassertions chapter6.Assertions
 		 * 
-		 * Enables assertions for a specifc package
+		 * Enables assertions for a specific package
 		 * -----------------------------------------------------------------------
 		 * java -ea:chapter5 chapter6.Assertions
 		 * 
-		 * Enables assertions for a specifc package + subpackages
+		 * Enables assertions for a specific package + subpackages
 		 * -----------------------------------------------------------------------
 		 * java -ea:chapter5... chapter6.Assertions
 		 * 
-		 * Enables assertions for a specifc class
+		 * Enables assertions for a specific class
 		 * -----------------------------------------------------------------------
 		 * java -ea:chapter5.StringReview chapter6.Assertions
 		 * 
