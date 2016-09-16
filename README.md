@@ -1,5 +1,5 @@
-OCP: Oracle Certified Professional
-==================================
+OCP: Oracle Certified Professional Java SE 8 Programmer SE 8 II
+===============================================================
 
 This is an eclipse-based project that contains the main topics covered in the OCP Oracle Certified Professional Java SE8 programer II (1Z0-809) exam. The materials used to prepare for the exam were:
 
